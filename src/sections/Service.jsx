@@ -2,7 +2,7 @@ import React from 'react';
 
 const Service = () => {
   return (
-    <section id="services" className="py_80 full_row bg_white">
+    <section id="services" className="py_80 full_row bg_white" name="services">
       <div className="container">
         <div className="row">
           <div className="col-md-12 col-lg-12">

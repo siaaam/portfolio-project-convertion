@@ -4,6 +4,7 @@ const Banner = () => {
   return (
     <section
       id="main_banner"
+      name="top"
       className="banner_water_effect background3 overlay_one"
     >
       <div className="container h-100">

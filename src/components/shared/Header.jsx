@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   return (
@@ -26,44 +27,109 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a className="nav-link active" href="#top" data-scroll="top">
+                <Link
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={1000}
+                  className="nav-link"
+                  to="top"
+                  data-scroll="top"
+                >
                   Home<span className="sr-only">(current)</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about">
+                <Link
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={1000}
+                  className="nav-link"
+                  to="about"
+                >
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#skill">
+                <Link
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={1000}
+                  className="nav-link"
+                  to="skill"
+                >
                   Skill
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#services">
+                <Link
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={1000}
+                  className="nav-link"
+                  to="services"
+                >
                   Services
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#portfolio">
+                <Link
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={1000}
+                  className="nav-link"
+                  to="portfolio"
+                >
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#testimonial">
+                <Link
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={1000}
+                  className="nav-link"
+                  to="testimonial"
+                >
                   Testimonial
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#blog">
+                <Link
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={1000}
+                  className="nav-link"
+                  to="blog"
+                >
                   Blog
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contact">
+                <Link
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={1000}
+                  className="nav-link"
+                  to="contact"
+                >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

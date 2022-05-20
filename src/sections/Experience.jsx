@@ -2,7 +2,10 @@ import React from 'react';
 
 const Experience = () => {
   return (
-    <div className="experience background2 overlay_two py_60 full_row">
+    <div
+      className="experience background2 overlay_two py_60 full_row"
+      name="experience"
+    >
       <div className="container">
         <div className="row">
           <div className="col-md-12 col-lg-12">
