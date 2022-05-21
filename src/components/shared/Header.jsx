@@ -1,10 +1,28 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
 
 const Header = () => {
+  const elm = useRef();
+  const scrollHandler = (e) => {
+    const scrollValue = window.scrollY;
+    console.log(scrollValue);
+    if (scrollValue >= 300) {
+      elm.current.classList.add('nav-scroll');
+      document.querySelector('.scrollBottomIcon').classList.add('visible');
+    } else {
+      document.querySelector('.scrollBottomIcon').classList.remove('visible');
+      elm.current.classList.remove('nav-scroll');
+    }
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', scrollHandler);
+    return () => {
+      window.removeEventListener('scroll', scrollHandler);
+    };
+  }, []);
   return (
     //   Navbar In Header
-    <header className="main_nav">
+    <header className="main_nav" ref={elm}>
       <div className="container">
         <nav
           id="navbar-example2"

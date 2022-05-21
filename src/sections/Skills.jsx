@@ -1,6 +1,16 @@
 import React from 'react';
+import SkillBar from 'react-skillbars';
 
 const Skills = () => {
+  const skills = [
+    { type: 'HTML', level: 100 },
+    { type: 'CSS', level: 85 },
+    { type: 'Javascript', level: 90 },
+    { type: 'React', level: 95 },
+    { type: 'Strapi', level: 80 },
+    { type: 'Github', level: 70 },
+    { type: 'Photoshop', level: 60 },
+  ];
   return (
     <section id="skill" className="py_80 bg_secondery full_row" name="skill">
       <div className="container">
@@ -43,113 +53,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="col-md-12 col-lg-6">
-              <div className="skill-progress wow animated slideInRight">
-                <div className="prgs-bar fact-counter">
-                  <span>HTML</span>
-                  <div className="progress count wow" data-wow-duration="0ms">
-                    <div className="skill-percent">
-                      <span
-                        className="count-num"
-                        data-speed="3000"
-                        data-stop="90"
-                      >
-                        0
-                      </span>
-                      %
-                    </div>
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="90"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-                <div className="prgs-bar fact-counter">
-                  <span>CSS</span>
-                  <div className="progress count wow" data-wow-duration="0ms">
-                    <div className="skill-percent">
-                      <span
-                        className="count-num"
-                        data-speed="3000"
-                        data-stop="95"
-                      >
-                        0
-                      </span>
-                      %
-                    </div>
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="95"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-                <div className="prgs-bar fact-counter">
-                  <span>JQuery</span>
-                  <div className="progress count wow" data-wow-duration="0ms">
-                    <div className="skill-percent">
-                      <span
-                        className="count-num"
-                        data-speed="3000"
-                        data-stop="85"
-                      >
-                        0
-                      </span>
-                      %
-                    </div>
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="85"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-                <div className="prgs-bar fact-counter">
-                  <span>PHP</span>
-                  <div className="progress count wow" data-wow-duration="0ms">
-                    <div className="skill-percent">
-                      <span
-                        className="count-num"
-                        data-speed="3000"
-                        data-stop="90"
-                      >
-                        0
-                      </span>
-                      %
-                    </div>
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="90"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-                <div className="prgs-bar fact-counter">
-                  <span>Wordpress</span>
-                  <div className="progress count wow" data-wow-duration="0ms">
-                    <div className="skill-percent">
-                      <span
-                        className="count-num"
-                        data-speed="3000"
-                        data-stop="90"
-                      >
-                        0
-                      </span>
-                      %
-                    </div>
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="90"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-              </div>
+              <SkillBar skills={skills} animationDuration={1000} />
             </div>
           </div>
         </div>

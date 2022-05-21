@@ -10,6 +10,10 @@ import Portfolio from './sections/Portfolio';
 import Service from './sections/Service';
 import Skills from './sections/Skills';
 import Testimonials from './sections/Testimonials';
+import ScrollBottom from './components/ScrollBottom';
+
+import '../node_modules/slick-carousel/slick/slick.css';
+import '../node_modules/slick-carousel/slick/slick-theme.css';
 
 function App() {
   return (
@@ -23,6 +27,7 @@ function App() {
       <Testimonials />
       <Blog />
       <Contact />
+      <ScrollBottom />
     </Layout>
   );
 }

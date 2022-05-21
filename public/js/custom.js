@@ -52,41 +52,6 @@
   });
 
   //=====================================================================================
-  // 02.  Scroll Top
-  //======================================================================================
-
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 500) {
-      $('#scroll').fadeIn();
-    } else {
-      $('#scroll').fadeOut();
-    }
-  });
-  $('#scroll').click(function () {
-    $('html, body').animate({ scrollTop: 0 }, 1000);
-    return false;
-  });
-
-  //====================================================================================
-  // 03.    Navbar scrolling navbar Fixed
-  //====================================================================================
-
-  // $window.on("scroll",function () {
-
-  //   var bodyScroll = $window.scrollTop(),
-  //     navbar = $(".main_nav"),
-  //     logo = $(".main_nav .navbar-brand> img");
-
-  //   if(bodyScroll > 100){
-
-  //     navbar.addClass("nav-scroll");
-  //   }else{
-
-  //     navbar.removeClass("nav-scroll");
-  //   }
-  // });
-
-  //=====================================================================================
   //  04.   Services Slider
   //=====================================================================================
 
@@ -151,32 +116,32 @@
   //  06.   Testimonial Slider
   //=====================================================================================
 
-  $('.testimonial_item').owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    margin: 0,
-    nav: true,
-    dots: false,
-    navText: [
-      '<span class="fa fa-angle-left"></span>',
-      '<span class="fa fa-angle-right"></span>',
-    ],
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 1,
-      },
-      1024: {
-        items: 2,
-      },
-      1200: {
-        items: 2,
-      },
-    },
-  });
+  // $('.testimonial_item').owlCarousel({
+  //   loop: true,
+  //   autoplay: true,
+  //   autoplayTimeout: 5000,
+  //   margin: 0,
+  //   nav: true,
+  //   dots: false,
+  //   navText: [
+  //     '<span class="fa fa-angle-left"></span>',
+  //     '<span class="fa fa-angle-right"></span>',
+  //   ],
+  //   responsive: {
+  //     0: {
+  //       items: 1,
+  //     },
+  //     600: {
+  //       items: 1,
+  //     },
+  //     1024: {
+  //       items: 2,
+  //     },
+  //     1200: {
+  //       items: 2,
+  //     },
+  //   },
+  // });
 
   //=====================================================================================
   // 07.    Fact Counter
@@ -220,15 +185,15 @@
     }
   }
 
-  // if ($('.wow').length) {
-  //   var wow = new WOW({
-  //     boxClass: 'wow', // animated element css class (default is wow)
-  //     animateClass: 'animated', // animation css class (default is animated)
-  //     offset: 0, // distance to the element when triggering the animation (default is 0)
-  //     mobile: true, // trigger animations on mobile devices (default is true)
-  //     live: true, // act on asynchronously loaded content (default is true)
-  //   });
-  //   wow.init();
+  if ($('.wow').length) {
+    var wow = new WOW({
+      boxClass: 'wow', // animated element css class (default is wow)
+      animateClass: 'animated', // animation css class (default is animated)
+      offset: 0, // distance to the element when triggering the animation (default is 0)
+      mobile: true, // trigger animations on mobile devices (default is true)
+      live: true, // act on asynchronously loaded content (default is true)
+    });
+    wow.init();
   }
 
   // When document is Scrollig, do
