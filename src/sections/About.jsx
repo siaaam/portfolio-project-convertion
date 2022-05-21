@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import '../../node_modules/venobox/dist/venobox.min.css';
+import Venobox from 'venobox';
 
 const About = () => {
+  useEffect(() => {
+    new Venobox({
+      navigation: false,
+    });
+  }, []);
   return (
     <section id="about" className="py_80 full_row bg_white" name="about">
       <div className="container">
@@ -83,9 +90,12 @@ const About = () => {
                 <img src="images/about/03.png" alt="image" />
                 <div className="iconround">
                   <a
-                    className="video-popup"
+                    className="venobox"
                     href="https://vimeo.com/134660574"
-                    title="video popup"
+                    title="My Portfolio"
+                    data-vbtype="video"
+                    data-maxwidth="600px"
+                    data-autoplay="true"
                   >
                     <i className="fa fa-play" aria-hidden="true"></i>
                   </a>
