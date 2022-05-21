@@ -1,4 +1,5 @@
 import React from 'react';
+import Typed from 'react-typed';
 
 const Banner = () => {
   return (
@@ -15,12 +16,15 @@ const Banner = () => {
                 I Am Austin Jackson!
               </span>
               <h1 className="cd-headline clip is-full-width text-uppercase">
-                <span className="color_white">I am a</span>
-                <span className="cd-words-wrapper color_default">
-                  <b className="is-visible">UI/UX Designer.</b>
-                  <b>Developer.</b>
-                  <b>Freelancer.</b>
-                </span>
+                <span className="color_white mr-3">I am a</span>
+                {/* <span className="cd-words-wrapper color_default"> */}
+                <Typed
+                  style={{ color: '#ffb32f' }}
+                  strings={['UI/UX Designer.', 'Developer.', 'Freelancer.']}
+                  typeSpeed={40}
+                  backSpeed={40}
+                />
+                {/* </span> */}
               </h1>
               <p className="color_white mb_30">
                 Libero habitasse sollicitudin aliquet venenatis iaculis placerat
