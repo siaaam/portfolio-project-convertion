@@ -6,7 +6,7 @@ const Header = () => {
   const scrollHandler = (e) => {
     const scrollValue = window.scrollY;
     console.log(scrollValue);
-    if (scrollValue >= 300) {
+    if (scrollValue >= 200) {
       elm.current.classList.add('nav-scroll');
       document.querySelector('.scrollBottomIcon').classList.add('visible');
     } else {
@@ -49,7 +49,7 @@ const Header = () => {
                   activeClass="active"
                   spy={true}
                   smooth={true}
-                  offset={-50}
+                  offset={-20}
                   duration={1000}
                   className="nav-link"
                   to="top"
@@ -63,8 +63,8 @@ const Header = () => {
                   activeClass="active"
                   spy={true}
                   smooth={true}
-                  offset={-50}
-                  duration={1000}
+                  offset={-20}
+                  duration={500}
                   className="nav-link"
                   to="about"
                 >
@@ -76,7 +76,7 @@ const Header = () => {
                   activeClass="active"
                   spy={true}
                   smooth={true}
-                  offset={-50}
+                  offset={-20}
                   duration={1000}
                   className="nav-link"
                   to="skill"
@@ -89,7 +89,7 @@ const Header = () => {
                   activeClass="active"
                   spy={true}
                   smooth={true}
-                  offset={-50}
+                  offset={-20}
                   duration={1000}
                   className="nav-link"
                   to="services"
@@ -102,7 +102,7 @@ const Header = () => {
                   activeClass="active"
                   spy={true}
                   smooth={true}
-                  offset={-50}
+                  offset={-20}
                   duration={1000}
                   className="nav-link"
                   to="portfolio"
@@ -115,7 +115,7 @@ const Header = () => {
                   activeClass="active"
                   spy={true}
                   smooth={true}
-                  offset={-50}
+                  offset={-20}
                   duration={1000}
                   className="nav-link"
                   to="testimonial"
@@ -128,7 +128,7 @@ const Header = () => {
                   activeClass="active"
                   spy={true}
                   smooth={true}
-                  offset={-50}
+                  offset={-20}
                   duration={1000}
                   className="nav-link"
                   to="blog"
@@ -141,7 +141,7 @@ const Header = () => {
                   activeClass="active"
                   spy={true}
                   smooth={true}
-                  offset={-50}
+                  offset={-20}
                   duration={1000}
                   className="nav-link"
                   to="contact"

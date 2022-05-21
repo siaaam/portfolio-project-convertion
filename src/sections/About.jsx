@@ -6,6 +6,7 @@ const About = () => {
   useEffect(() => {
     new Venobox({
       navigation: false,
+      spinner: 'plane',
     });
   }, []);
   return (
