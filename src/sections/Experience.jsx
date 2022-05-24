@@ -1,4 +1,5 @@
 import React from 'react';
+import CountUp from 'react-countup';
 
 const Experience = () => {
   return (
@@ -19,7 +20,7 @@ const Experience = () => {
                     <span className="flaticon-man-working-on-a-laptop-from-side-view"></span>
                     <div className="counting_digit color_default mt_15">
                       <h2 className="count-num" data-speed="3000" data-stop="7">
-                        0
+                        <CountUp start={0} end={7} duration={3} />
                       </h2>
                       <span>+</span>
                     </div>
@@ -38,7 +39,7 @@ const Experience = () => {
                         data-speed="3000"
                         data-stop="145"
                       >
-                        0
+                        <CountUp start={0} end={300} duration={3} />
                       </h2>
                       <span>+</span>
                     </div>
@@ -57,7 +58,7 @@ const Experience = () => {
                         data-speed="3000"
                         data-stop="137"
                       >
-                        0
+                        <CountUp start={0} end={200} duration={3} />
                       </h2>
                       <span>+</span>
                     </div>

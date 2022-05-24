@@ -216,9 +216,9 @@
   //  09.   Gallery With Filters List
   //=====================================================================================
 
-  if ($('.filter-list').length) {
-    $('.filter-list').mixItUp({});
-  }
+  // if ($('.filter-list').length) {
+  //   $('.filter-list').mixItUp({});
+  // }
 
   //=====================================================================================
   //  10.   Youtube and Vimeo video popup control
