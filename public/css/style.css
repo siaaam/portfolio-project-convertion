@@ -1258,6 +1258,11 @@ ul#menu li a {
   text-align: left;
   width: 100%;
 }
+
+.red {
+  color: red;
+}
+
 #success,
 #error {
   display: none;

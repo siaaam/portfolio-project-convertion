@@ -5,7 +5,6 @@ const Header = () => {
   const elm = useRef();
   const scrollHandler = (e) => {
     const scrollValue = window.scrollY;
-    console.log(scrollValue);
     if (scrollValue >= 200) {
       elm.current.classList.add('nav-scroll');
       document.querySelector('.scrollBottomIcon').classList.add('visible');

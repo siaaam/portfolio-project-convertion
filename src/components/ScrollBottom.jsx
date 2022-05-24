@@ -1,7 +1,6 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 const ScrollBottom = () => {
-  console.log(window.scrollY);
   return (
     <a
       href="#"
