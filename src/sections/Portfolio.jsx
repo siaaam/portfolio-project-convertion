@@ -1,6 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import mixitup from 'mixitup';
 
 const Portfolio = () => {
+  useEffect(() => {
+    mixitup('.mixer-container', {
+      selectors: {
+        target: '.mix',
+      },
+      animation: {
+        duration: 500,
+      },
+    });
+  }, []);
   return (
     <section
       id="portfolio"
@@ -70,7 +81,7 @@ const Portfolio = () => {
                 </div>
               </div>
 
-              <div className="filter-list">
+              <div className="mixer-container">
                 <div className="portfolio-items">
                   <div className="row">
                     <div className="column mix mix_all graphic development wordpress mb_30 col-md-4 col-lg-4">
@@ -149,7 +160,7 @@ const Portfolio = () => {
                             </span>
                             <div className="tag">
                               <ul>
-                                <li>Branding,</li>
+                                <li>Branding</li>
                                 <li>wordpress</li>
                               </ul>
                             </div>

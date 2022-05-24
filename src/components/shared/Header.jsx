@@ -139,12 +139,12 @@ const Header = () => {
               <li className="nav-item">
                 <Link
                   activeClass="active"
+                  to="contact"
                   spy={true}
                   smooth={true}
                   offset={-20}
                   duration={1000}
                   className="nav-link"
-                  to="contact"
                 >
                   Contact
                 </Link>
