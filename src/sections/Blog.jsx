@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
   return (
@@ -128,9 +129,9 @@ const Blog = () => {
                 </div>
               </div>
               <div className="mx-auto text-center mt_60">
-                <a className="btn btn-default" href="blog.html">
-                  View Blog
-                </a>
+                <Link to="/blogs" className="btn btn-default">
+                  View All Blogs
+                </Link>
               </div>
             </div>
           </div>

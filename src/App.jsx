@@ -1,34 +1,20 @@
 import './App.css';
 
-import Layout from './components/layout/Layout';
-import About from './sections/About';
-import Banner from './sections/Banner';
-import Blog from './sections/Blog';
-import Contact from './sections/Contact';
-import Experience from './sections/Experience';
-import Portfolio from './sections/Portfolio';
-import Service from './sections/Service';
-import Skills from './sections/Skills';
-import Testimonials from './sections/Testimonials';
-import ScrollBottom from './components/ScrollBottom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import '../node_modules/slick-carousel/slick/slick.css';
 import '../node_modules/slick-carousel/slick/slick-theme.css';
+import Blogs from './pages/Blogs';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <Layout>
-      <Banner />
-      <About />
-      <Skills />
-      <Experience />
-      <Service />
-      <Portfolio />
-      <Testimonials />
-      <Blog />
-      <Contact />
-      <ScrollBottom />
-    </Layout>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" index element={<Home />} />
+        <Route path="/blogs" index element={<Blogs />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
